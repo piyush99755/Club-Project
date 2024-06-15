@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap');
+
+/*universal CSS properties*/
+*{
+   font-family: "Roboto Slab", serif;
+   font-optical-sizing: auto;
+   padding:0;
+   margin:0;
+}
+/*header and nav bar*/
+header{
+    height:60px;
+    background-color:green;
+    display:flex;
+    align-items:center;/*horizontally align items in the center*/
+    justify-content: center;/*set position in the center vertically*/
+}
+
+.nav_links ul{
+    display:flex;
+    
+    
+}
+
+
+.nav_links ul li{
+    
+    padding-left:40px;
+    font-size:1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+    
+}
+
+/*main*/
+.club{
+    
+    padding-top:200px;
+    background-color: black;
+    width:100%;
+    height:1020px;
+}
+
+.club-name{
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    background-color: gray;
+    height:120px;
+    text-align:center;
+
+
+}
+
+.club-name p{
+    font-size:2.5rem;
+    color:orange;
+    text-align:center;
+    font-weight:bold;
+}
+.club-focus{
+    padding-top:200px;
+}
+.club-focus h2{
+    color:yellow;
+}
+
+.club-focus h3{
+    color:white;
+    padding-top:20px;
+    line-height:2.3rem;
+}
+
+.images-container{
+    display:flex;
+    justify-content: space-evenly;
+    padding-top:100px;
+    margin-bottom:120px;
+}
+
+img{
+    width:400px;
+    height:300px;
+}
+
+.club-user{
+    height:350px;
+    background-color:green;
+    margin-top:0px;
+    padding-top:0px;
+}
+.statement{
+    color:yellow;
+    padding-top:60px;
+    font-size:2.3rem;
+}
+.user{
+    padding-top:20px;
+    color:yellow;
+}
+.club-gallery{
+    background-color:black;
+    height:1250px;
+}
+
+
+
+.join-us p{
+    color:yellow;
+    font-size:1.8rem;
+    text-align:center;
+}
+
+.join-us img{
+    
+    display:block;
+    margin:auto;
+    width:400px;
+    height:600px;
+}
+
+.meet-up{
+    font-size:2rem;
+    text-align:center;
+    color:yellow;
+    padding-top:30px;
+}
+
+footer{
+    display:flex;
+    align-items:center;
+    height:80px;
+    background-color: green;
+}
+
