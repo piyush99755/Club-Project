@@ -3,30 +3,30 @@
 /*universal CSS properties*/
 *{
    font-family: "Roboto Slab", serif;
-   font-optical-sizing: auto;
+   font-optical-sizing: auto; 
    padding:0;
-   margin:0;
+   margin:0; 
 }
 /*header and nav bar*/
 header{
-    height:60px;
     background-color:green;
-    display:flex;
-    align-items:center;/*horizontally align items in the center*/
-    justify-content: center;/*set position in the center vertically*/
+    height:auto;
+    width:100%;
 }
 
-.nav_links ul{
+header .nav_links ul{
+   
     display:flex;
-    
-    
+    align-items:center;
+    justify-content: center;
+    height:60px;
 }
 
 
 .nav_links ul li{
     
     padding-left:40px;
-    font-size:1.5rem;
+    font-size:1 rem;
     font-weight: bold;
     text-decoration: none;
     list-style-type: none;
@@ -34,311 +34,366 @@ header{
     
 }
 
+
+
 /*main*/
 .club{
-    
-    padding-top:200px;
-    background-color: black;
     width:100%;
-    height:1020px;
+    background-color: rgba(0.8, 0.8, 0.8, 0.8);
+}
+
+.club .container {
+    width:98%;
+    margin:auto;
+    color: rgba(0.8, 0.8, 0.8, 0.8);
+    
+
 }
 
 .club-name{
-    
+    background-image: url('images/runner-splash.jpg');
+    background-size: cover;
     display:flex;
     align-items:center;
     justify-content:center;
     width:100%;
     background-color: gray;
-    height:120px;
+    height:30rem;
     text-align:center;
 
 
 }
 
-.club-name p{
-    font-size:2.5rem;
+.club-name h1{
+    
+   font-size:2.5rem;
     color:orange;
+    background-color: rgba(0.8, 0.8, 0.8, 0.8);
     text-align:center;
     font-weight:bold;
+    width:100%;
+    padding:10px 0;
 }
 .club-focus{
-    padding-top:200px;
+    padding-top:50px;
+    padding-bottom:50px;
+   
 }
 .club-focus h2{
     color:yellow;
+    font-size:1.8rem;
+    padding-left:20px;
 }
 
 .club-focus h3{
     color:white;
     padding-top:20px;
+    padding-left:20px;
     line-height:2.3rem;
 }
 
-.images-container{
-    display:flex;
-    justify-content: space-evenly;
-    padding-top:100px;
-    margin-bottom:120px;
+.club-focus .images-container, 
+.club-gallery .images-container{
+   margin-top:40px;
+    
 }
 
-img{
-    width:400px;
-    height:300px;
+.club-focus .images-container img,
+.club-gallery .images-container img{
+    width: 30%;
+    margin:1.5%;
+    
 }
-
 .club-user{
     height:350px;
     background-color:green;
-    margin-top:0px;
-    padding-top:0px;
+    
 }
 .statement{
     color:yellow;
     padding-top:60px;
+    padding-left:20px;
     font-size:2.3rem;
 }
 .user{
     padding-top:20px;
+    padding-left:20px;
     color:yellow;
 }
-.club-gallery{
-    background-color:black;
-    height:1250px;
+
+.club-gallery .container{
+    width:98%;
+    margin:auto;
+    color: rgba(0.8, 0.8, 0.8, 0.8);
 }
 
-
-
+.club-gallery .images-container img{
+   
+    width:30%;
+    margin:1.5%;
+    
+}
+.join-us {
+    margin-top:80px;
+}
 .join-us p{
     color:yellow;
     font-size:1.8rem;
     text-align:center;
+    padding-bottom:45px;
 }
 
 .join-us img{
     
     display:block;
     margin:auto;
-    width:400px;
-    height:600px;
+    width:50%;
+    height:auto;
+    
 }
 
 .meet-up{
-    font-size:2rem;
-    text-align:center;
-    color:yellow;
-    padding-top:30px;
+    font-size:1.8rem;
+    margin-top:40px;
+    padding-bottom:40px;
 }
 
 footer{
-    display:flex;
-    align-items:center;
-    height:80px;
-    background-color: green;
+    background-color:green;
+    width:100%;    
 }
 
-@media only screen and (max-width: 600px) {
-    header{
-        height:120px;
-        text-align:center;
-        
-        
-       
-    }
-
-    .nav_links ul{
-        display:block;
-        
-        
-    }
-    
-    
-    .nav_links ul li{
-        
-        padding-left:40px;
-        font-size:1.5rem;
-        font-weight: bold;
-        text-decoration: none;
-        list-style-type: none;
-        cursor: pointer;
-        padding-top:8px;
-        
-    }
-    .club{
-        height:auto;
-    }
-
-    .images-container{
-        display:block;
-       
-       
-    }
-    img{
-        width:100%;
-        padding-top:10px;
-
-    }
-
-    footer{
-        display:block;
-        align-items:center;
-        text-align:center;
-        height:140px;
-        background-color: green;
-        
-    }
-
-    .club-gallery{
-        background-color:black;
-        height:auto;
-    }
-    
-    
-    
-    .join-us p{
-        color:yellow;
-        font-size:1.8rem;
-        text-align:center;
-    }
-    
-    .join-us img{
-        
-        display:block;
-        margin:auto;
-        width:400px;
-        height:600px;
-    }
-
-    .meet-up{
-        font-size:2rem;
-        text-align:center;
-        color:yellow;
-        padding-bottom:30px;
-    }
+footer .nav_links ul{
    
-  }
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:60px;
+}
 
-  @media only screen and (min-width: 601px) and (max-width: 900px) {
-    header{
-        height:120px;
-        text-align:center;
-        
-        
+
+
+
+@media only screen and (max-width: 1048px) {
+
+    .club-name h1{
+    
+         font-size:2rem;
+         color:orange;
+         background-color: rgba(0.8, 0.8, 0.8, 0.8);
+         text-align:center;
+         font-weight:bold;
+         width:100%;
+         padding:10px 0;
+     }
+
+    .club-focus h2{
        
-    }
-
-    .nav_links ul{
-        display:block;
-        
-        
+        font-size:1.6rem;
     }
     
-    
-    .nav_links ul li{
-        
-        padding-left:40px;
-        font-size:1.5rem;
-        font-weight: bold;
-        text-decoration: none;
-        list-style-type: none;
-        cursor: pointer;
-        padding-top:8px;
-        
-    }
-    .club{
-        height:auto;
-    }
-
-    .images-container{
-        display:block;
+    .club-focus h3{
        
-       
-    }
-    img{
-        width:100%;
-        height:auto;
-        padding-top:10px;
-
+        font-size:18px;
     }
 
-    footer{
-        display:block;
-        align-items:center;
-        text-align:center;
-        height:140px;
-        background-color: green;
+    .club-focus .images-container {
+        display:flex;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: center;
         
     }
 
-    .club-gallery{
-        background-color:black;
-        height:auto;
+    .club-focus .images-container img,
+    .club-gallery .images-container img
+    {
+        width: 33%;
+        margin-left:auto;
+        margin-right:auto;
+        
     }
-    
-    
-    
+
+    .club-gallery .images-container {
+        display:flex;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .club-user{
+        height:280px;
+        background-color:green;
+        
+    }
+    .statement{
+        
+        font-size:1.7rem;
+    }
+    .user{
+        
+        color:yellow;
+    }
+
+    .join-us {
+        margin-top:80px;
+    }
     .join-us p{
-        color:yellow;
-        font-size:1.8rem;
+        
+        font-size:1.6rem;
         text-align:center;
+        padding-bottom:45px;
     }
     
     .join-us img{
         
         display:block;
         margin:auto;
-        width:400px;
-        height:600px;
+        width:50%;
+        height:auto;
+        
     }
-
+    
     .meet-up{
         font-size:2rem;
         text-align:center;
         color:yellow;
-        padding-bottom:30px;
+        margin-top:40px;
+        padding-bottom:40px;
     }
-   
     
-    
-  }
-
-  @media only screen and (max-width: 1250px) {
-    .club{
-        height:auto;
-    }
-
-    .images-container{
-        display:block;
-       
-       
-    }
-    img{
+    footer{
+        background-color:green;
         width:100%;
-        height:auto;
-        padding-top:10px;
-
     }
-
-    .club-gallery{
-        background-color:black;
-        height:auto;
+    
+    footer .nav_links ul{
+       
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        height:60px;
     }
-    .join-us img{
+}
+
+@media only screen and (max-width: 875px) {
+
+    .club-focus h2{
+         font-size:22px;
+    }
+    
+    
+
+    .club-focus .images-container {
+        display:flex;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top:30px;
         
-        display:block;
+    }
+
+    .club-focus .images-container img,
+    .club-gallery .images-container img{
+        width: 100%;
+        margin-left:auto;
+        margin-right:auto;
+        
+    }
+
+    .club-focus .images-container {
+        display:flex;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom:auto;
+        
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .club-focus{
+        padding-bottom:20px;
+    }
+    .club-focus h2{
+        font-size:18px;
+    }
+
+    .club-focus h3{
+       font-size:16px;
+    }
+    
+    .club-focus .images-container {
+        display:flex;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top:30px;
+        
+    }
+
+    .club-focus .images-container img,
+    .club-gallery .images-container img{
+        width: 100%;
+        margin-left:auto;
+        margin-right:auto;
+        
+    }
+
+    .club-focus .images-container {
+        display:flex;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom:0;
+        
+    }
+
+    .club-user{
+        height:240px;
+        background-color:green;
         margin:auto;
-        width:400px;
-        height:600px;
+        
     }
-
-    .meet-up{
-        font-size:2rem;
-        text-align:center;
+    .statement{
+        padding-top:40px;
+        font-size:1.3rem;
+    }
+    .user{
+        
         color:yellow;
-        padding-bottom:30px;
     }
 
+    .club-gallery .images-container {
+        margin-top:20px;
+        
+    }
+
+    .join-us{
+        margin-top:20px;
+        
+    }
+
+    .join-us p{
+        
+        font-size:1.3rem;
+        text-align:center;
+        padding-bottom:45px;
+        margin-top:20px;
+    }
     
+    .join-us img{
+        width:60%;
+        height:auto;
+        
+    }
     
-  }
+    .meet-up{
+        font-size:1.3rem;
+        margin-top:40px;
+        padding-bottom:40px;
+    }
+}
+
 
