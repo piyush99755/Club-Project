@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap');
+
 
 /*universal CSS properties*/
 *{
+    
+
    font-family: "Roboto Slab", serif;
    font-optical-sizing: auto; 
    padding:0;
